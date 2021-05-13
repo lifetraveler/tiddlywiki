@@ -37,6 +37,8 @@ main () {
     "$TW_RENDERTYPE" \
     "$TW_SERVETYPE" \
     "$TW_USERNAME" \
+    "$TW_READERS" \
+    "$TW_WRITTERS" \
     "$TW_PASSWORD" \
     "$TW_HOST" \
     "$TW_PATHPREFIX"
