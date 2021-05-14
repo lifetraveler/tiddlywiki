@@ -22,7 +22,7 @@ LABEL author="Nicola Worthington <nicolaw@tfb.net>" \
       com.tiddlywiki.version="$TW_VERSION" \
       com.tiddlywiki.homepage="https://tiddlywiki.com" \
       com.tiddlywiki.author="Jeremy Ruston" \
-      com.tiddlywiki.vcs="https://github.com/Jermolene/TiddlyWiki5"
+      com.tiddlywiki.vcs="https://github.com/Jermolene/TiddlyWiki5"https://github.com/lifetraveler/tiddlywiki/blob/master/Dockerfile
 
 RUN apk add libcap \
  && setcap 'cap_net_bind_service=+ep' /usr/local/bin/node \
@@ -37,7 +37,7 @@ RUN mkdir -p /var/lib/tiddlywiki \
 VOLUME /var/lib/tiddlywiki
 WORKDIR /var/lib/tiddlywiki
 
-RUN npm install -g "tiddlywiki@${TW_VERSION}"
+RUN npm install -g "tiddlywiki"
 
 ENV TW_WIKINAME="mywiki" \
     TW_PORT="8080" \
