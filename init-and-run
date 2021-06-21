@@ -47,8 +47,8 @@ main () {
     "port=$TW_PORT" \
     "credentials=/var/lib/tiddlywiki/myusers.csv" \
     "username=$TW_USERNAME" \
-    "readers=(anon)" \
-    "writers=$TW_USERNAME" \
+    "/"readers=(anon)/"" \
+    "writers=$TW_WRITTERS" \
     "password=$TW_PASSWORD" \
     "host=$TW_HOST" 
 }
