@@ -45,6 +45,7 @@ main () {
     
   exec /usr/bin/env node $NODE_OPTIONS "$TW5" "$TW_WIKINAME" --listen \
     "port=$TW_PORT" \
+    "credentials=/var/lib/tiddlywiki/myusers.csv"
     "username=$TW_USERNAME" \
     "readers=(anon)" \
     "writers=$TW_USERNAME" \
